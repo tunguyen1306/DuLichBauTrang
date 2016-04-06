@@ -900,6 +900,7 @@
     <Content Include="Content\less\mixins.less" />
     <Content Include="Content\less\sb-admin-2.less" />
     <Content Include="Content\less\variables.less" />
+    <Content Include="Scripts\CusWeb.js" />
     <Content Include="Scripts\jsWeb\colorbox.js" />
     <Content Include="Scripts\jsWeb\device.min.js" />
     <Content Include="Scripts\jsWeb\drupal.js" />
@@ -995,6 +996,7 @@
     <Content Include="Views\Home\Grid.cshtml" />
     <Content Include="Views\Home\Blank.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Shared\LayOutWeb.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
