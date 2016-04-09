@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=FONTS_005CFLEXSLIDER_002DICON_002EEOT/@EntryIndexedValue">fonts\flexslider-icon.eot</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=FONTS_005CFLEXSLIDER_002DICON_002ESVG/@EntryIndexedValue">fonts\flexslider-icon.svg</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=FONTS_005CFLEXSLIDER_002DICON_002ETTF/@EntryIndexedValue">fonts\flexslider-icon.ttf</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/IgnoredPaths/=FONTS_005CFLEXSLIDER_002DICON_002EWOFF/@EntryIndexedValue">fonts\flexslider-icon.woff</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=FONTS_005CFLEXSLIDER_002DICON_002EEOT/@EntryIndexedValue">fonts\flexslider-icon.eot</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=FONTS_005CFLEXSLIDER_002DICON_002ESVG/@EntryIndexedValue">fonts\flexslider-icon.svg</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=FONTS_005CFLEXSLIDER_002DICON_002ETTF/@EntryIndexedValue">fonts\flexslider-icon.ttf</s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=FONTS_005CFLEXSLIDER_002DICON_002EWOFF/@EntryIndexedValue">fonts\flexslider-icon.woff</s:String></wpf:ResourceDictionary>
