@@ -1,0 +1,75 @@
+﻿
+
+
+<div class="header-section-1">
+    <div class="container-12">
+        <div class="grid-12">
+
+            <div id="logo" class="logo">
+                <a href="/drupal_53893/" title="Home" rel="home" id="img-logo" class="img-logo">
+                    <img src="~/img/logo.png" alt="Home">
+                </a>
+                <h1 title="BonVoyage" id="site-name" class="site-name">
+                    <a href="/drupal_53893/" title="BonVoyage">BonVoyage</a>
+                </h1>
+                <div title="the best travel guide" id="slogan" class="slogan">
+                    the best travel guide
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="stickup header-section-2">
+    <div class="container-12">
+        <div class="grid-12">
+            <div class="col1">
+
+                <div class="region region-menu">
+                    <div id="block-superfish-1" class="block-superfish-1 block block-superfish block-even">
+
+
+                        <div class="content block-content">
+                            <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-5 sf-parent-items-2 sf-single-items-3">
+                                
+                                @foreach (var item in Model)
+                                {
+                                    <li class="middle odd sf-item-3 sf-depth-1 sf-total-children-3 sf-parent-children-1 sf-single-children-2 menuparent">
+                                        <a href="@item.link_menu_dulich" title="" class="sf-depth-1 menuparent">@item.name_menu_dulich</a>
+
+                                    </li>
+
+                                }
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+
+                <div class="region region-search">
+                    <div id="block-search-form" class="block-search-form block block-search block-odd">
+
+
+                        <div class="content block-content">
+                            <form action="/drupal_53893/" method="post" id="search-block-form" accept-charset="UTF-8">
+                                <div>
+                                    <div class="container-inline">
+                                        <h2 class="element-invisible">Search form</h2>
+                                        <div class="form-item form-type-textfield form-item-search-block-form">
+                                            <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                                            <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+                                        </div>
+                                        <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-rbVGC9gQgqfHSd9gZbYcGt1gfMENiOvSz3uv9Wc6lVo" />
+                                        <input type="hidden" name="form_id" value="search_block_form" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

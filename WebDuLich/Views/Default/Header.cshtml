@@ -1,0 +1,31 @@
+﻿@using System.Linq;
+@using System.Web;
+@using System.Web.Mvc;
+@using WebDuLich.Models;
+@{
+    WebDuLichEntities db = new WebDuLichEntities();
+    var qs = from dataslide in db.tbl_slide_dulich
+             where dataslide.trangthai_silde_dulich == 1
+             select dataslide;
+
+    var qsMenu = from datamenu in db.tbl_menu_dulich
+                 where datamenu.trangthai_menu_dulich == 1
+                 orderby datamenu.thutu_menu_dulich
+                 select datamenu;
+    var qsTb= (from datamenu in db.tbl_new_dulich
+                 where datamenu.trangthai_new_dulich == 1 && datamenu.type_new_dulich==1
+                 orderby datamenu.thutu_new_dulich
+                 select datamenu).Take(4).ToList();
+}
+<header id="header" class="header page-header clearfix" role="banner">
+
+    <div class="header-section-3">
+
+        @Html.Partial("~/Views/Default/Menu.cshtml", qsMenu)
+
+        @Html.Partial("~/Views/Default/Slide.cshtml", qs)
+    </div>
+
+    @Html.Partial("~/Views/Default/TieuBieu.cshtml", qsTb)
+
+</header>

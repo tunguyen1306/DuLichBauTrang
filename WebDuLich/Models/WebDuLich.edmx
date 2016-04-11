@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WebDuLichModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_menu_dulich">
+          <Key>
+            <PropertyRef Name="id_menu_dulich" />
+          </Key>
+          <Property Name="id_menu_dulich" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name_menu_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="link_menu_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="trangthai_menu_dulich" Type="int" />
+          <Property Name="thutu_menu_dulich" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_new_dulich">
+          <Key>
+            <PropertyRef Name="id_new_dulich" />
+          </Key>
+          <Property Name="id_new_dulich" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="thutu_new_dulich" Type="int" />
+          <Property Name="tomtat_new_dulich" Type="ntext" />
+          <Property Name="img1_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img2_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img3_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img4_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img5_new_dulich" Type="ntext" />
+          <Property Name="mota_new_dulich" Type="ntext" />
+          <Property Name="trangthai_new_dulich" Type="int" />
+          <Property Name="type_new_dulich" Type="int" />
+          <Property Name="img6_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img7_new_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="class_new_dulich" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tbl_slide_dulich">
+          <Key>
+            <PropertyRef Name="id_slide_dulich" />
+          </Key>
+          <Property Name="id_slide_dulich" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name_silde_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="img_silde_dulich" Type="nvarchar" MaxLength="200" />
+          <Property Name="tomtat_silde_dulich" Type="ntext" />
+          <Property Name="trangthai_silde_dulich" Type="int" />
+          <Property Name="thutu_silde_dulich" Type="int" />
+          <Property Name="thutunew_dulich" Type="int" />
+        </EntityType>
+        <EntityContainer Name="WebDuLichModelStoreContainer">
+          <EntitySet Name="tbl_menu_dulich" EntityType="Self.tbl_menu_dulich" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_new_dulich" EntityType="Self.tbl_new_dulich" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_slide_dulich" EntityType="Self.tbl_slide_dulich" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WebDuLichModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_slide_dulich">
+          <Key>
+            <PropertyRef Name="id_slide_dulich" />
+          </Key>
+          <Property Name="id_slide_dulich" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name_silde_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img_silde_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="tomtat_silde_dulich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trangthai_silde_dulich" Type="Int32" />
+          <Property Name="thutu_silde_dulich" Type="Int32" />
+          <Property Name="thutunew_dulich" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="WebDuLichEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_slide_dulich" EntityType="Self.tbl_slide_dulich" />
+          <EntitySet Name="tbl_menu_dulich" EntityType="WebDuLichModel.tbl_menu_dulich" />
+          <EntitySet Name="tbl_new_dulich" EntityType="WebDuLichModel.tbl_new_dulich" />
+        </EntityContainer>
+        <EntityType Name="tbl_menu_dulich">
+          <Key>
+            <PropertyRef Name="id_menu_dulich" />
+          </Key>
+          <Property Name="id_menu_dulich" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name_menu_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="link_menu_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="trangthai_menu_dulich" Type="Int32" />
+          <Property Name="thutu_menu_dulich" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_new_dulich">
+          <Key>
+            <PropertyRef Name="id_new_dulich" />
+          </Key>
+          <Property Name="id_new_dulich" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="thutu_new_dulich" Type="Int32" />
+          <Property Name="tomtat_new_dulich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="img1_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img2_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img3_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img4_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img5_new_dulich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="mota_new_dulich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="trangthai_new_dulich" Type="Int32" />
+          <Property Name="type_new_dulich" Type="Int32" />
+          <Property Name="img6_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="img7_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="class_new_dulich" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebDuLichModelStoreContainer" CdmEntityContainer="WebDuLichEntities">
+          <EntitySetMapping Name="tbl_slide_dulich">
+            <EntityTypeMapping TypeName="WebDuLichModel.tbl_slide_dulich">
+              <MappingFragment StoreEntitySet="tbl_slide_dulich">
+                <ScalarProperty Name="id_slide_dulich" ColumnName="id_slide_dulich" />
+                <ScalarProperty Name="name_silde_dulich" ColumnName="name_silde_dulich" />
+                <ScalarProperty Name="img_silde_dulich" ColumnName="img_silde_dulich" />
+                <ScalarProperty Name="tomtat_silde_dulich" ColumnName="tomtat_silde_dulich" />
+                <ScalarProperty Name="trangthai_silde_dulich" ColumnName="trangthai_silde_dulich" />
+                <ScalarProperty Name="thutu_silde_dulich" ColumnName="thutu_silde_dulich" />
+                <ScalarProperty Name="thutunew_dulich" ColumnName="thutunew_dulich" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_menu_dulich">
+            <EntityTypeMapping TypeName="WebDuLichModel.tbl_menu_dulich">
+              <MappingFragment StoreEntitySet="tbl_menu_dulich">
+                <ScalarProperty Name="thutu_menu_dulich" ColumnName="thutu_menu_dulich" />
+                <ScalarProperty Name="trangthai_menu_dulich" ColumnName="trangthai_menu_dulich" />
+                <ScalarProperty Name="link_menu_dulich" ColumnName="link_menu_dulich" />
+                <ScalarProperty Name="name_menu_dulich" ColumnName="name_menu_dulich" />
+                <ScalarProperty Name="id_menu_dulich" ColumnName="id_menu_dulich" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_new_dulich">
+            <EntityTypeMapping TypeName="WebDuLichModel.tbl_new_dulich">
+              <MappingFragment StoreEntitySet="tbl_new_dulich">
+                <ScalarProperty Name="class_new_dulich" ColumnName="class_new_dulich" />
+                <ScalarProperty Name="img7_new_dulich" ColumnName="img7_new_dulich" />
+                <ScalarProperty Name="img6_new_dulich" ColumnName="img6_new_dulich" />
+                <ScalarProperty Name="type_new_dulich" ColumnName="type_new_dulich" />
+                <ScalarProperty Name="trangthai_new_dulich" ColumnName="trangthai_new_dulich" />
+                <ScalarProperty Name="mota_new_dulich" ColumnName="mota_new_dulich" />
+                <ScalarProperty Name="img5_new_dulich" ColumnName="img5_new_dulich" />
+                <ScalarProperty Name="img4_new_dulich" ColumnName="img4_new_dulich" />
+                <ScalarProperty Name="img3_new_dulich" ColumnName="img3_new_dulich" />
+                <ScalarProperty Name="img2_new_dulich" ColumnName="img2_new_dulich" />
+                <ScalarProperty Name="img1_new_dulich" ColumnName="img1_new_dulich" />
+                <ScalarProperty Name="tomtat_new_dulich" ColumnName="tomtat_new_dulich" />
+                <ScalarProperty Name="thutu_new_dulich" ColumnName="thutu_new_dulich" />
+                <ScalarProperty Name="img_new_dulich" ColumnName="img_new_dulich" />
+                <ScalarProperty Name="name_new_dulich" ColumnName="name_new_dulich" />
+                <ScalarProperty Name="id_new_dulich" ColumnName="id_new_dulich" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

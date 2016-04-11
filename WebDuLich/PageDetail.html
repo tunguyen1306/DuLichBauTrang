@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+
+<!--[if IE 8 ]><html lang="en" dir="ltr"  class="no-js ie ie8 lt-ie9"><![endif]-->
+<!--[if IE 9 ]><html lang="en" dir="ltr"  class="no-js ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" dir="ltr" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"3d17a8527c58cdb0ae752c015e84c579",petok:"829741570e0394889f6fe971042e06f69907cc89-1460294516-86400",zone:"template-help.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7"},"ga_key":{"ua":"UA-7078796-5","ga_bs":"2"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+    </script>
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(e,t){function n(){}function r(e){function t(e){return e&&e instanceof n?e:e?a(e,i,o):o()}function s(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,f=0;u>f;f++)a[f].apply(i,r);var s=c[w[n]];return s&&s.push([h,n,r,i]),i}function p(e,t){g[e]=l(e).concat(t)}function l(e){return g[e]||[]}function d(e){return f[e]=f[e]||r(s)}function v(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in c||(c[t]=[])})}var g={},w={},h={on:p,emit:s,get:d,listeners:l,context:t,buffer:v};return h}function o(){return new n}var i="nr@context",a=e("gos"),u=e(1),c={},f={},s=t.exports=r();s.backlog=c},{1:12,gos:"7eSDFh"}],ee:[function(e,t){t.exports=e("QJf3ax")},{}],3:[function(e,t){function n(e,t){return function(){r(e,[(new Date).getTime()].concat(i(arguments)),null,t)}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],u=["addPageAction"],c="api-";o(a,function(e,t){newrelic[t]=n(c+t,"api")}),o(u,function(e,t){newrelic[t]=n(c+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),r("err",[e,(new Date).getTime()])}},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,t){t.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,t){function n(e,t,n){if(r.call(e,t))return e[t];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[t]=o,o}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],handle:[function(e,t){t.exports=e("D5DuLP")},{}],D5DuLP:[function(e,t){function n(e,t,n,o){r.buffer([e],o),r.emit(e,t,n)}var r=e("ee").get("handle");t.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(e,t){function n(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");t.exports=n},{gos:"7eSDFh"}],id:[function(e,t){t.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,t){function n(){if(!v++){var e=d.info=NREUM.info,t=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){u(p,function(t,n){e[t]||(e[t]=n)});var n="https"===s.split(":")[0]||e.sslForHttp;d.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=d.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=e("handle"),u=e(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),d=t.exports={offset:i(),origin:s,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var v=0},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,t){t.exports=e("G9z0Bl")},{}],12:[function(e,t){function n(e,t){var n=[],o="",i=0;for(o in e)r.call(e,o)&&(n[i]=t(o,e[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;t.exports=n},{}],13:[function(e,t){function n(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=n},{}]},{},["G9z0Bl"]);</script>
+    <link rel="shortcut icon" href="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="shortlink" href="/drupal_53893/?q=node/94" />
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+    <link rel="canonical" href="/drupal_53893/?q=node/94" />
+
+    <!--[if lte IE 8]>
+        <div style=' text-align:center; clear: both; padding:0 0 0 15px; position: relative;'>
+            <a href="//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+                <img src="//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+            </a>
+        </div>
+    <![endif]-->
+
+    <title>Miuasa Dekoias | BonVoyage</title>
+
+    <style type="text/css" media="all">
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/system/system.base.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/system/system.menus.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/system/system.messages.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/system/system.theme.css?o5be0z");
+    </style>
+    <style type="text/css" media="screen">
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tipsy/stylesheets/tipsy.css?o5be0z");
+    </style>
+    <style type="text/css" media="all">
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/comment/comment.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/date/date_api/date.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/field/theme/field.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/node/node.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/poll/poll.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/search/search.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_shortcodes/css/shortcodes.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/user/user.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/modules/forum/forum.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/views/css/views.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_lazyload/css/tm_lazyload.css?o5be0z");
+    </style>
+    <style type="text/css" media="all">
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/cctags/cctags.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/colorbox/example1/colorbox.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/ctools/css/ctools.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/panels/css/panels.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_animate/css/animate.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_font_awesome/css/font-awesome.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/dismiss/css/dismiss.base.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_follow/css/tm_follow.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/superfish/css/superfish.css?o5be0z");
+    </style>
+    <style type="text/css" media="screen">
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/css/boilerplate.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/css/style.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/css/maintenance-page.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/css/skeleton.css?o5be0z");
+        @import url("http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/css/custom.css?o5be0z");
+    </style>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/misc/jquery.once.js?v=1.2"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/misc/drupal.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tipsy/javascripts/jquery.tipsy.js?v=0.1.7"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tipsy/javascripts/tipsy.js?v=0.1.7"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_shortcodes/js/jquery.easypiechart.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_shortcodes/js/jquery.appear.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_shortcodes/js/shortcodes.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_lazyload/js/jquery.lazyloader.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/colorbox/jquery.colorbox-min.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/colorbox/js/colorbox.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_animate/js/wow.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/olark/olark.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_block_bg/js/jquery.mb.YTPlayer.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_block_bg/js/tm_block_bg_parallax.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_block_bg/js/jquery.stellar.min.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/tm_block_bg/js/tm_block_bg_video.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/superfish/sftouchscreen.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/superfish/superfish.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/easing/jquery.easing.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/libraries/superfish/supersubs.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/modules/superfish/superfish.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/theme988.core.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.loader.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.mobilemenu.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.debouncedresize.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.easing.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.ui.totop.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.cookie.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/tm-stick-up.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/tformer.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/device.min.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.mousewheel.min.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/jquery.simplr.smoothscroll.min.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/migrate.js?o5be0z"></script>
+    <script type="text/javascript" src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/js/tm-parallax.js?o5be0z"></script>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/drupal_53893\/","pathPrefix":"","ajaxPageState":{"theme":"theme988","theme_token":"voiglE5UQa9r0znvsa9F6wBdfVGi9S8ByLtW42pp_8M","js":{"0":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/tipsy\/javascripts\/jquery.tipsy.js":1,"sites\/all\/modules\/tipsy\/javascripts\/tipsy.js":1,"sites\/all\/modules\/tm_shortcodes\/js\/jquery.easypiechart.js":1,"sites\/all\/modules\/tm_shortcodes\/js\/jquery.appear.js":1,"sites\/all\/modules\/tm_shortcodes\/js\/shortcodes.js":1,"sites\/all\/modules\/tm_lazyload\/js\/jquery.lazyloader.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/tm_animate\/js\/wow.js":1,"sites\/all\/modules\/olark\/olark.js":1,"sites\/all\/modules\/tm_block_bg\/js\/jquery.mb.YTPlayer.js":1,"sites\/all\/modules\/tm_block_bg\/js\/tm_block_bg_parallax.js":1,"sites\/all\/modules\/tm_block_bg\/js\/jquery.stellar.min.js":1,"sites\/all\/modules\/tm_block_bg\/js\/tm_block_bg_video.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/easing\/jquery.easing.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"sites\/all\/themes\/theme988\/js\/theme988.core.js":1,"sites\/all\/themes\/theme988\/js\/jquery.loader.js":1,"sites\/all\/themes\/theme988\/js\/jquery.mobilemenu.js":1,"sites\/all\/themes\/theme988\/js\/jquery.debouncedresize.js":1,"sites\/all\/themes\/theme988\/js\/jquery.easing.js":1,"sites\/all\/themes\/theme988\/js\/jquery.ui.totop.js":1,"sites\/all\/themes\/theme988\/js\/jquery.cookie.js":1,"sites\/all\/themes\/theme988\/js\/tm-stick-up.js":1,"sites\/all\/themes\/theme988\/js\/tformer.js":1,"sites\/all\/themes\/theme988\/js\/device.min.js":1,"sites\/all\/themes\/theme988\/js\/jquery.mousewheel.min.js":1,"sites\/all\/themes\/theme988\/js\/jquery.simplr.smoothscroll.min.js":1,"sites\/all\/themes\/theme988\/js\/migrate.js":1,"sites\/all\/themes\/theme988\/js\/tm-parallax.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/tipsy\/stylesheets\/tipsy.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/tm_shortcodes\/css\/shortcodes.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/tm_lazyload\/css\/tm_lazyload.css":1,"sites\/all\/modules\/cctags\/cctags.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/tm_animate\/css\/animate.css":1,"sites\/all\/modules\/tm_font_awesome\/css\/font-awesome.css":1,"sites\/all\/modules\/dismiss\/css\/dismiss.base.css":1,"sites\/all\/modules\/tm_follow\/css\/tm_follow.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/theme988\/css\/boilerplate.css":1,"sites\/all\/themes\/theme988\/css\/style.css":1,"sites\/all\/themes\/theme988\/css\/maintenance-page.css":1,"sites\/all\/themes\/theme988\/css\/skeleton.css":1,"sites\/all\/themes\/theme988\/css\/custom.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"960px"},"tipsy":{"custom_selectors":[{"selector":".tipsy","options":{"fade":1,"gravity":"w","trigger":"hover","delayIn":"0","delayOut":"0","opacity":"0.8","offset":"0","html":0,"tooltip_content":{"source":"attribute","selector":"title"}}}]},"dismiss":{"fadeout":0},"olark":{"disable_ios":1,"enabled":1},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show","height":["show","easeOutCubic"]},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":false,"disableHI":false},"plugins":{"touchscreen":{"mode":"useragent_custom","useragent":"iphone|android|ipad"},"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}}});
+//--><!]]>
+    </script>
+
+    <!--[if LT IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script>
+		if (jQuery.cookie('the_cookie') != 0) {
+			document.write('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">')
+		} else {
+			document.write('<meta name="viewport" content="width=device-width">')
+		}
+    </script>
+
+    <link rel="stylesheet" href="/drupal_53893/sites/all/themes/theme988/css/style-mobile.css" media="screen" id="style-mobile">
+    <link rel="stylesheet" href="/drupal_53893/sites/all/themes/theme988/css/skeleton-mobile.css" media="screen" id="skeleton-mobile">
+    <script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7078796-5']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+    </script>
+</head>
+<body id="body" class="html not-front not-logged-in no-sidebars page-node page-node- page-node-94 node-type-article with-navigation with-subnav page-94 section-node">
+
+
+
+    <a href="#main-menu" class="element-invisible element-focusable">Skip to navigation</a>
+    <a href="#content" class="element-invisible element-focusable">Skip to main content</a>
+
+
+    <div id="page-wrapper" class="page-wrapper">
+        <div id="page" class="page">
+
+            <!-- Header
+            ======================================================================================= -->
+            <header id="header" class="header page-header clearfix" role="banner">
+                <!-- Region Header Top -->
+
+                <div class="header-section-3">
+                    <div class="header-section-1">
+                        <div class="container-12">
+                            <div class="grid-12">
+                                <!-- Logo -->
+                                <div id="logo" class="logo">
+                                    <a href="/drupal_53893/" title="Home" rel="home" id="img-logo" class="img-logo">
+                                        <img src="http://livedemo00.template-help.com/drupal_53893/sites/all/themes/theme988/logo.png" alt="Home">
+                                    </a>
+                                    <h1 title="BonVoyage" id="site-name" class="site-name">
+                                        <a href="/drupal_53893/" title="BonVoyage">BonVoyage</a>
+                                    </h1>
+                                    <div title="the best travel guide" id="slogan" class="slogan">
+                                        the best travel guide
+                                    </div>
+                                </div><!-- /#name-and-slogan -->
+                            </div>
+                            <div class="grid-12">
+                                <!-- Region User Menu -->
+                                <div class="region region-user-menu">
+
+                                    <div id="block-system-user-menu" class="block-system-user-menu block block-system block-menu block-odd">
+                                        <!-- Block title -->
+                                        <!-- Block content -->
+                                        <div class="content block-content">
+                                            <ul class="menu clearfix">
+                                                <li class="first leaf sign-in mid-747"><a href="/drupal_53893/?q=user/login" title="">Sign In</a></li>
+                                                <li class="last leaf register mid-6997"><a href="/drupal_53893/?q=user/register" title="">Register</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stickup header-section-2">
+                        <!-- Sticky menu wrapper -->
+                        <div class="container-12">
+                            <div class="grid-12">
+                                <div class="col1">
+                                    <!-- Region Menu -->
+                                    <div class="region region-menu">
+
+                                        <div id="block-superfish-1" class="block-superfish-1 block block-superfish block-even">
+                                            <!-- Block title -->
+                                            <!-- Block content -->
+                                            <div class="content block-content">
+                                                <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-5 sf-parent-items-2 sf-single-items-3"><li id="menu-201-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-3 sf-parent-children-3 sf-single-children-0 menuparent"><a href="/drupal_53893/" title="Front page" class="sf-depth-1 menuparent">Home</a><ul class="sf-megamenu"><li class="sf-megamenu-wrapper first odd sf-item-1 sf-depth-1 sf-total-children-3 sf-parent-children-3 sf-single-children-0 menuparent"><ol><li id="menu-5076-1" class="first odd sf-item-1 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 sf-megamenu-column menuparent"><div class="sf-megamenu-column"><a href="/drupal_53893/?q=archive" title="" class="sf-depth-2 menuparent">Archive</a><ol><li id="menu-5077-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/drupal_53893/?q=faqs" title="" class="sf-depth-3">FAQs</a></li><li id="menu-5944-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="/drupal_53893/?q=testimonials" title="" class="sf-depth-3">Testimonials</a></li></ol></div></li><li id="menu-5612-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 sf-megamenu-column menuparent"><div class="sf-megamenu-column"><a href="http://drupal.org" title="" class="sf-depth-2 menuparent">Cras suscipit</a><ol><li id="menu-5945-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="http://drupal.org" title="" class="sf-depth-3">Lorem ipsum</a></li><li id="menu-5614-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="http://drupal.org" title="" class="sf-depth-3">Vestibulum</a></li></ol></div></li><li id="menu-5615-1" class="last odd sf-item-3 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 sf-megamenu-column menuparent"><div class="sf-megamenu-column"><a href="http://drupal.org" title="" class="sf-depth-2 menuparent">Cras euismod</a><ol><li id="menu-5616-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="http://drupal.org" title="" class="sf-depth-3">Vivamus sit</a></li><li id="menu-5940-1" class="last even sf-item-2 sf-depth-3 sf-no-children"><a href="http://drupal.org" title="" class="sf-depth-3">Dolore sit</a></li></ol></div></li></ol></li></ul></li><li id="menu-5074-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/drupal_53893/?q=about" title="" class="sf-depth-1">About us</a></li><li id="menu-739-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-3 sf-parent-children-1 sf-single-children-2 menuparent"><a href="/drupal_53893/?q=portfolio" title="" class="sf-depth-1 menuparent">Services</a><ul><li id="menu-3768-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/drupal_53893/?q=portfolio-2" title="" class="sf-depth-2">Services 2</a></li><li id="menu-3769-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/drupal_53893/?q=portfolio-3" title="" class="sf-depth-2 menuparent">Services 3</a><ul><li id="menu-5079-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/drupal_53893/?q=taxonomy/term/31" title="" class="sf-depth-3">Category 1</a></li><li id="menu-5080-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/drupal_53893/?q=taxonomy/term/30" title="" class="sf-depth-3">Category 2</a></li><li id="menu-5081-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/drupal_53893/?q=taxonomy/term/29" title="" class="sf-depth-3">Category 3</a></li></ul></li><li id="menu-3767-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/drupal_53893/?q=portfolio-4" title="" class="sf-depth-2">Services 4</a></li></ul></li><li id="menu-668-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/drupal_53893/?q=blog" title="" class="sf-depth-1">Blog</a></li><li id="menu-4931-1" class="last odd sf-item-5 sf-depth-1 sf-no-children"><a href="/drupal_53893/?q=contacts" class="sf-depth-1">Contacts</a></li></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col2">
+                                    <!-- Region Search -->
+                                    <div class="region region-search">
+
+                                        <div id="block-search-form" class="block-search-form block block-search block-odd">
+                                            <!-- Block title -->
+                                            <!-- Block content -->
+                                            <div class="content block-content">
+                                                <form action="/drupal_53893/?q=node/94" method="post" id="search-block-form" accept-charset="UTF-8">
+                                                    <div>
+                                                        <div class="container-inline">
+                                                            <h2 class="element-invisible">Search form</h2>
+                                                            <div class="form-item form-type-textfield form-item-search-block-form">
+                                                                <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                                                                <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+                                                            </div>
+                                                            <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-vtxzXf6xG6vGHi6kvQ1RXHYHHsXTkCN8EMJgYkS5g48" />
+                                                            <input type="hidden" name="form_id" value="search_block_form" />
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Region Header -->
+                </div>
+
+                <!-- Region Header bottom -->
+            </header>
+
+            <!-- Content
+            ======================================================================================= -->
+            <div id="main-wrapper" class="main-wrapper" role="main">
+                <!-- Region content top -->
+                <!-- Region content one -->
+                <!-- Region parallax one -->
+                <!-- Region parallax two -->
+
+                <div class="container-12">
+                    <div class="grid-12">
+                        <div id="main" class="main clearfix">
+
+                            <!-- Page content -->
+                            <div id="content" class="content content-main ">
+                                <header id="content-header" class="content-header">
+
+
+
+                                    <!-- Page title -->
+                                    <h2 id="page-title" class="title page-title">Miuasa Dekoias</h2>
+
+
+
+                                </header>
+
+                                <!-- Page content -->
+                                <div class="region region-content">
+
+                                    <div id="block-system-main" class="block-system-main block block-system block-even">
+                                        <!-- Block title -->
+                                        <!-- Block content -->
+                                        <div class="content block-content">
+                                            <div id="node-94" class="node node-article node-odd published with-comments node-full clearfix node-94" role="article">
+                                                <header class="node-header clearfix">
+                                                    <!-- Node title -->
+                                                    <!-- Node meta -->
+                                                    <div class="submitted node-submitted" role="contentinfo">
+                                                        <ul class="submitted-list clearfix">
+
+                                                            <li class="node-author"><span class="fa fa-fw fa-user"></span> <span class="username">admin</span></li>
+                                                            <li class="node-time">
+                                                                <time datetime="2015-04-28T18:07:44">
+                                                                    <span class="fa fa-fw fa-calendar"></span> April 28, 2015
+                                                                </time>
+                                                            </li>
+
+                                                            <li class="node-views">
+                                                                <span class="fa fa-fw fa-eye"></span>
+                                                                97 view(s)
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </header>
+
+                                                <div class="content node-content">
+
+                                                    <!-- Node content -->
+                                                    <div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="http://livedemo00.template-help.com/drupal_53893/sites/default/files/styles/full_post/public/img-1.jpg?itok=zlhfrIKk" width="1170" height="400" /></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                                                        <div class="field-items">
+                                                            <div class="field-item even">
+                                                                <p>Cras rhoncus, eros at semper varius, urna enim posuere risus, at malesuada tortor lacus et elit. Maecenas porta iaculis nibh non aliquam. Nulla sapien metus, suscipit vel tincidunt at, feugiat quis purus. Morbi hendrerit placerat orci ac tincidunt. Sed bibendum varius venenatis. Quisque sed erat vitae erat commodo lacinia. Suspendisse in vulputate nisi, in egestas metus. Vestibulum tempus justo et ipsum bibendum, in varius nisl sodales. Aliquam massa velit, rutrum nec dolor quis, viverra varius enim. Ut auctor dolor et libero consectetur suscipit. Donec nisl odio, mollis id felis malesuada, sollicitudin dapibus mi. In pulvinar posuere nisi, vitae tristique dolor tristique id.</p>
+                                                                <p>In semper velit vel dui elementum, non semper purus iaculis. Mauris euismod hendrerit nibh, non ornare augue vehicula sed. Morbi rhoncus massa risus, aliquet euismod felis ultricies vel. Quisque hendrerit rutrum tincidunt. Fusce non feugiat nulla. Integer dolor arcu, rutrum eu elit sit amet, pellentesque egestas nisi. Quisque iaculis erat ac ligula blandit, nec auctor nisi varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean pretium ut sapien vel varius. Nunc porttitor ornare dolor, viverra adipiscing elit adipiscing vel. Praesent faucibus ultricies sem, et dignissim eros lacinia et. Curabitur id turpis mauris. Nunc sit amet felis eu nibh tincidunt tincidunt eu vulputate magna. Nullam vitae auctor leo. Donec accumsan nulla id vehicula ornare.</p>
+                                                                <p>Donec quis arcu id massa mollis vestibulum. Aliquam lorem lacus, luctus ac velit nec, sagittis convallis neque. Cras ultricies mollis nulla, laoreet ullamcorper ipsum vestibulum nec. Nulla scelerisque nisi odio, eu sagittis lorem elementum quis. Suspendisse sed pharetra turpis. Donec dolor ligula, accumsan nec pretium nec, molestie sed ligula. In in ante auctor, mollis mauris in, faucibus nunc. Sed turpis leo, adipiscing a eleifend a, iaculis at augue. Fusce at ullamcorper nibh, imperdiet pharetra ligula. Duis viverra tellus quam, sed commodo elit feugiat a. Nullam suscipit sollicitudin bibendum. Pellentesque aliquet dui libero.</p>
+                                                                <p>Curabitur lacinia, risus id fermentum consectetur, neque elit suscipit arcu, nec adipiscing est orci quis ligula. Mauris porta a mi eu adipiscing. Nam iaculis lorem eu blandit vehicula. Maecenas aliquam interdum dui vitae luctus. Suspendisse semper quam pretium, blandit diam non, hendrerit lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ultrices tortor vitae congue adipiscing. Integer vehicula ornare massa quis feugiat.</p>
+                                                                <p>Donec tempus venenatis est non fringilla. Mauris est arcu, imperdiet eget erat ac, auctor auctor sapien. Aenean vehicula tortor dui, at tristique magna ultrices quis. Vivamus placerat, neque adipiscing mattis vestibulum, lorem ipsum euismod tellus, eget vehicula lorem felis ut leo. Nam congue metus consectetur nisi faucibus luctus. Praesent sit amet condimentum tellus, eget lacinia lectus. Vivamus id ligula pellentesque, elementum urna ac, congue tellus. Nunc cursus cursus sapien sed feugiat. Fusce ac nibh ac dui malesuada molestie. Phasellus rutrum molestie massa ac mattis. Donec suscipit pharetra cursus. Integer mollis velit at tortor faucibus tincidunt. In pharetra arcu id eros eleifend ornare. Proin ut facilisis ligula, vel accumsan eros. Curabitur pharetra libero vitae tristique fringilla. Aenean dictum ante non arcu tincidunt, sed eleifend nisi sodales. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <footer class="footer node-footer" role="contentinfo">
+                                                    <!-- Node tags -->
+                                                    <!-- Node links -->
+                                                    <div class="node-links clearfix">
+                                                        <ul class="links inline">
+                                                            <li class="comment_forbidden first last"><span><a href="/drupal_53893/?q=user/login&amp;destination=node/94%23comment-form">Log in</a> or <a href="/drupal_53893/?q=user/register&amp;destination=node/94%23comment-form">register</a> to post comments</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Region Content bottom -->
+                <!-- Region Video -->
+            </div>
+
+            <!-- Footer
+            ======================================================================================= -->
+            <footer id="footer" class="footer page-footer" role="contentinfo">
+                <!-- Region Footer top -->
+
+                <div class="footer-wrapper">
+                    <div class="container-12">
+                        <div class="grid-5">
+                            <!-- Region Footer one -->
+                            <div class="region region-footer-one">
+
+                                <div id="block-fb-likebox-0" class="block-fb-likebox-0 block block-fb-likebox block-odd">
+                                    <!-- Block title -->
+                                    <h2 class="title block-title">Follow Us On Facebook</h2>
+
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+
+                                        <iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/TemplateMonster&width=270&colorscheme=light&show_faces=true&bordercolor&stream=false&header=false&height=305&show_border=false&force_wall=false"
+                                                scrolling="no"
+                                                frameborder="0"
+                                                style="border: none; overflow: hidden; width: 270px; height: 305px;"
+                                                allowTransparency="true" title="Like us on Facebook"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-4">
+                            <!-- Region Footer two -->
+                            <div class="region region-footer-two">
+
+                                <div id="block-tm-follow-site" class="block-tm-follow-site block block-tm-follow block-even">
+                                    <!-- Block title -->
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <div class='tm-follow-links clearfix site'>
+                                            <span class='tm-follow-link-wrapper tm-follow-link-wrapper-this-site without-label'>
+                                                <a href="/drupal_53893/?q=rss.xml" class="tm-follow-link tm-follow-link-this-site tm-follow-link-site"></a>
+                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-facebook without-label'>
+                                                <a href="http://facebook.com/" class="tm-follow-link tm-follow-link-facebook tm-follow-link-site"></a>
+                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-googleplus without-label'>
+                                                <a href="http://plus.google.com/" class="tm-follow-link tm-follow-link-googleplus tm-follow-link-site"></a>
+                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-linkedin without-label'>
+                                                <a href="http://linkedin.com/" class="tm-follow-link tm-follow-link-linkedin tm-follow-link-site"></a>
+                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-pinterest without-label'>
+                                                <a href="http://pinterest.com/" class="tm-follow-link tm-follow-link-pinterest tm-follow-link-site"></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="block-block-9" class="block-block-9 block block-block block-odd">
+                                    <!-- Block title -->
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <p>28 Jackson Blvd Ste 1020<br />Chicago<br />IL 60604-2340</p>
+                                        <p><a href="/cdn-cgi/l/email-protection#4a23242c250a2e2f2725262324216425382d"><i class="fa fa-envelope"></i> <span class="__cf_email__" data-cfemail="61080f070e2105040c0e0d080f0a4f0e1306">[email&#160;protected]</span>
+                                        <script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-3">
+                            <!-- Region Footer three -->
+                            <div class="region region-footer-three">
+
+                                <div id="block-block-5" class="block-block-5 block block-block block-copyright block-even">
+                                    <!-- Block title -->
+                                    <!-- Block content -->
+                                    <div class="content block-content">
+                                        <div>&copy; 2016 | <a href="?q=privacy-policy">Privacy Policy</a></div>
+                                        <div class="switcher">Desktop Version Only</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Region Map -->
+                <div id="map_wrapper" class="map_wrapper region-fullwidth">
+                    <div class="region region-map">
+
+                        <div id="block-block-8" class="block-block-8 block block-block block-odd">
+                            <!-- Block title -->
+                            <!-- Block content -->
+                            <div class="content block-content">
+                                <div class="google-map-api footer-map">
+                                    <div id="map-canvas-1914689447" class="gmap"></div>
+                                </div>
+                                <script>
+<!--//--><![CDATA[// ><!--
+
+			google_api_map_init_1914689447();
+			function google_api_map_init_1914689447(){
+				var map;
+				var coordData = new google.maps.LatLng(parseFloat(41.850033), parseFloat(-87.6500523));
+				var marker;
+
+				function initialize() {
+					var mapOptions = {
+						center: coordData,
+						scrollwheel: false,
+						styles: [ { "stylers": [ { "hue": "" }, { "saturation": -100 }, { "gamma": 1 } ] } ],
+						zoom: 15
+					}
+					var map = new google.maps.Map(document.getElementById("map-canvas-1914689447"), mapOptions);
+					marker = new google.maps.Marker({
+						map: map,
+						draggable: true,
+						position: coordData,
+						icon: ""
+					});
+				}
+				google.maps.event.addDomListener(window, "load", initialize);
+			}
+
+//--><!]]>
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>  <div class="region region-page-bottom">
+        <!-- begin olark code -->
+        <script type="text/javascript" data-cfasync="false">
+// <![CDATA[
+/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('7830-582-10-3714');/*]]>*/
+// ]]></script>
+        <noscript><a href="https://www.olark.com/site/7830-582-10-3714/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+        <!-- end olark code -->
+    </div>
+    <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @file
+ *   Main JavaScript file for Dismiss module
+ */
+
+(function ($) {
+
+  Drupal.behaviors.dismiss = {
+    attach: function (context, settings) {
+
+      // Prepend the Dismiss button to each message box.
+      $('.messages').each(function () {
+        var flag = $(this).children().hasClass('dismiss');
+
+        if (!flag) {
+          $(this).prepend('<button class="dismiss"><span class="element-invisible">' + Drupal.t('Close this message.') + '</span></button>');
+        }
+      });
+
+      // When the Dismiss button is clicked hide this set of messages.
+      $('.dismiss').click(function () {
+        $(this).parent().hide('fast');
+      });
+
+      // Fadeout out status messages when positive value defined.
+      if (Drupal.settings.dismiss.fadeout > 0) {
+        setTimeout(function () { $('.messages.status').fadeOut(); }, Drupal.settings.dismiss.fadeout);
+      }
+
+    }
+  }
+
+})(jQuery);
+
+//--><!]]>
+    </script>
+    <script type="text/javascript">
+/* CloudFlare analytics upgrade */
+    </script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"72d7dcce33","applicationID":"1388850","transactionName":"fUxZVkFmSlNaSlkARVtXXxxyUUxbW1cXDV5WXW5DUlVdbUJQXRQ=","queueTime":0,"applicationTime":12700,"atts":"SRpQEQlJRU8=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script>
+</body><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N7VWVN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push( {'gtm.start': new Date().getTime(),event:'gtm.js'} );var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-N7VWVN');</script> <!-- End Google Tag Manager -->
+</html>
