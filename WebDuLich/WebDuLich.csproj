@@ -139,6 +139,7 @@
     <Compile Include="Models\tbl_slide_dulich.cs">
       <DependentUpon>WebDuLich.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UrlFriendly.cs" />
     <Compile Include="Models\WebDuLich.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -687,6 +688,7 @@
     <Content Include="img\b05.png" />
     <Content Include="img\buttons-light.png" />
     <Content Include="img\collect.gif" />
+    <Content Include="img\mo-to-tren-cat.jpg" />
     <Content Include="img\header-image.jpg" />
     <Content Include="img\img-1.jpg" />
     <Content Include="img\img-2.jpg" />
@@ -705,6 +707,7 @@
     <Content Include="img\slide-3.jpg" />
     <Content Include="img\tmapctrl.png" />
     <Content Include="img\transparent.png" />
+    <Content Include="img\truot-cat.png" />
     <Content Include="img\__utm.gif" />
     <Content Include="js\colorbox.js" />
     <Content Include="js\device.min.js" />

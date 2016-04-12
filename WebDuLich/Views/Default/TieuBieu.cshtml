@@ -1,4 +1,6 @@
 ﻿@using System.Configuration
+@using WebDuLich.Models
+@model IEnumerable<WebDuLich.Models.tbl_new_dulich>
 <div id="header_bottom_wrapper" class="header_bottom_wrapper">
     <div class="container-12">
         <div class="grid-12">
@@ -9,52 +11,40 @@
 
                     <div class="content block-content">
                         <div class="view view-welcome view-id-welcome view-display-id-block mobile-two-column view-dom-id-ab46dd87a2381031c0725c720ae72556">
-                            @*<div class="view-header">
-                                <p>Chào mừng quý khách đến với khu du lịch sinh thái Bàu Trắng</p>
-                            </div>*@
+                          
                             <div class="view-content">
-                                @*@foreach (var item in Model)
-                                {
-                                    <div class="cusgrid-3" id="@item.id_new_dulich">
-                                        <div class="views-field views-field-field-image">
-                                            <div class="field-content">
-                                                <img src="@ConfigurationManager.AppSettings["domain"]@item.img_new_dulich.ToString().Split('_')[0]/@item.img_new_dulich" width="242" height="204" />
-                                            </div>
-                                        </div>
-                                        <div class="views-field views-field-nothing welcome-body">
-                                            <span class="field-content">
-                                                <h4>@item.name_new_dulich</h4>
-                                                <p>
-                                                   
-                                                    <div class="btn">
-                                                        <a href="/drupal_53893/?q=node/93">more</a>
-                                                    </div>
-                                            </span>
-                                        </div>
-                                    </div>
-                                }*@
-                            @for (int j = 0; j < Model.ToList().Count(); j++)
+                               
+                            @for (int j = 0; j < Model.ToList().Count; j++)
                             {
                                 var item = Model.ToList()[j];
+                                <div class="cusgrid_@j" id="@item.id_new_dulich">
+                                    <div class="views-field views-field-field-image">
+                                        <div class="field-content">
+                                            <img src="@ConfigurationManager.AppSettings["domain"]@item.img_new_dulich.ToString().Split('_')[0]/@item.img_new_dulich" width="242" height="204" />
+                                        </div>
+                                    </div>
+                                    <div class="views-field views-field-nothing welcome-body">
+                                        <span class="field-content">
+                                            <h4>@item.name_new_dulich</h4>
+                                            <p>
 
-                               
+                                                <div class="btn">
+                                                    <a href="@Url.Action("Detail","Default",new { id=item.name_new_dulich.UrlFrendly()+"-"+item.id_new_dulich})">Xem  chi tiết</a>
+                                                </div>
+                                        </span>
+                                    </div>
+                                </div>
+
+
                             }
-                                @*<script type="text/javascript">
-                                    jQuery('.cusgrid-3').each(function (i,o) {
-                                        if (i==0) {
-                                            jQuery('#cusgrid').addClass("grid-3 views-row first alpha odd");
-                                        }
-                                        if (i == 1) {
-                                            jQuery('#cusgrid').addClass("grid-3 views-row even");
-                                        }
-                                        if (i == 2) {
-                                            jQuery('#cusgrid').addClass("grid-3 views-row odd");
-                                        }
-                                        if (i == 3) {
-                                            jQuery('#cusgrid').addClass("grid-3 views-row last omega even");
-                                        }
-                                    });
-                                </script>*@
+                                <script type="text/javascript">
+                                    jQuery(document).ready(function () {
+                                        jQuery('.cusgrid_0').addClass("grid-3 views-row first alpha odd");
+                                        jQuery('.cusgrid_1').addClass("grid-3 views-row even");
+                                        jQuery('.cusgrid_2').addClass("grid-3 views-row odd");
+                                        jQuery('.cusgrid_3').addClass("grid-3 views-row last omega even");
+                                    })
+                                </script>
 
                                 @*<div class="grid-3 views-row first alpha odd">
                                     <div class="views-field views-field-field-image"> <div class="field-content"><img src="~/img/img-1.jpg?itok=u95wxIem" width="242" height="204" /></div> </div>

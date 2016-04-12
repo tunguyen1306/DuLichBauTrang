@@ -40,12 +40,15 @@ namespace WebDuLich.Controllers
             return View();
         }
 
-        public ActionResult Detail()
+        public ActionResult Detail(string id)
+
         {
-
-            return View();
+            var id_ =int.Parse( id.Split('-').Last());
+            var qr = from dataNew in db.tbl_new_dulich
+                     where dataNew.trangthai_new_dulich==1 && dataNew.id_new_dulich== id_
+                     select dataNew;
+            return View(qr.ToList());
         }
-
-
+       
     }
 }
