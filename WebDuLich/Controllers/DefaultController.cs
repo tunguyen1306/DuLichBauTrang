@@ -49,6 +49,25 @@ namespace WebDuLich.Controllers
                      select dataNew;
             return View(qr.ToList());
         }
-       
+
+        public ActionResult Abouts()
+
+        {
+            
+            return View();
+        }
+        public ActionResult PhongCanh()
+        {
+            var qsTb = (from datamenu in db.tbl_new_dulich
+                        where datamenu.trangthai_new_dulich == 1 
+                        orderby datamenu.thutu_new_dulich
+                        select datamenu).ToList();
+            return View(qsTb);
+        }public ActionResult Contact()
+        {
+           
+            return View();
+        }
+
     }
 }

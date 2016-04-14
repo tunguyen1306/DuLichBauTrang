@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewBag.Title = "PhongCanh";
+    Layout = "~/Views/Shared/LayOutWeb.cshtml";
+}
+
+@using System.Linq;
+@using System.Web;
+@using System.Web.Mvc;
+@using WebDuLich.Models;
+@using System.Configuration
+@model IEnumerable<WebDuLich.Models.tbl_new_dulich>
+@{
+    WebDuLichEntities db = new WebDuLichEntities();
+
+    var qsMenu = from datamenu in db.tbl_menu_dulich
+                 where datamenu.trangthai_menu_dulich == 1
+                 orderby datamenu.thutu_menu_dulich
+                 select datamenu;
+    var qsTb = (from datamenu in db.tbl_new_dulich
+                where datamenu.trangthai_new_dulich == 1
+                orderby datamenu.thutu_new_dulich
+                select datamenu).ToList();
+}
+
+<header id="header" class="header page-header clearfix" role="banner">
+    <div class="header-section-3">
+        @Html.Partial("~/Views/Default/Menu.cshtml", qsMenu)
+    </div>
+</header>
+
+<div class="container-12">
+    <div class="grid-12">
+        <div class="main clearfix" id="main">
+
+            <!-- Page content -->
+            <div class="content content-main " id="content">
+
+                <!-- Page content -->
+                <div class="region region-content">
+
+                    <div class="block-system-main block block-system block-even" id="block-system-main">
+                        <!-- Block title -->
+                        <!-- Block content -->
+                        <div class="content block-content">
+                            <div class="view view-portfolio view-id-portfolio view-display-id-page_2 portfolio-grid view-dom-id-c865b6e58276638440d74a17f00833e3 jquery-once-1-processed">
+                                <div class="view-header">
+                                    <div class="view view-portfolio-filter view-id-portfolio_filter view-display-id-default view-dom-id-b21ecfe527816c79fb47511591dfb69b">
+
+
+
+                                        <div class="view-content">
+
+                                            <div id="isotope-options">
+                                                <ul data-option-key="filter" class="option-set clearfix" id="filters">
+                                                    <li><a href="#filter" data-option-value=".category-1" class="filterbutton">1</a></li>
+
+
+
+                                                    <li><a href="#filter" data-option-value=".category-2" class="filterbutton">2</a></li>
+
+
+
+                                                    <li><a href="#filter" data-option-value=".category-3" class="filterbutton">3</a></li>
+
+
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="view-content">
+                                   
+                               
+                                    <div data-cols="2cols" class="isotope-container" id="isotope-container">
+                                        @for (int j = 0; j < Model.ToList().Count; j++)
+                                        {
+                                            var item = Model.ToList()[j];
+                                            <div data-category=" all category-2" class="isotope-element isotope-element-@j">
+                                                <div class="views-field views-field-field-portfolio-image">
+                                                        <div class="field-content">
+                                                    <a rel="gallery-all" class="colorbox init-colorbox-processed cboxElement" title="Cras a tincidunt risus" href="@ConfigurationManager.AppSettings["domain"]@item.img_new_dulich.ToString().Split('_')[0]/@item.img_new_dulich">
+                                                            <img width="570" height="330" title="du lịch bàu trắng" alt="du lịch bàu trắng" src="@ConfigurationManager.AppSettings["domain"]@item.img_new_dulich.ToString().Split('_')[0]/@item.img_new_dulich">
+                                                    </a>
+                                                    </div>
+                                                  </div>
+                                                <div class="views-field views-field-title">
+                                                 <h6 class="field-content">
+                                                    <a href="@Url.Action("Detail","Default",new { id=item.name_new_dulich.UrlFrendly()+"-"+item.id_new_dulich})">@item.name_new_dulich</a>
+                                                    </h6>
+                                                  </div>
+                                                <div class="views-field views-field-body">     
+                                                   <span class="field-content">@item.tomtat_new_dulich</span>  </div>
+                                                <div class="views-field views-field-view-node button">     
+                                                   <span class="field-content"><a href="@Url.Action("Detail","Default",new { id=item.name_new_dulich.UrlFrendly()+"-"+item.id_new_dulich})">More</a>
+                                                    </span> 
+                                                 </div>
+                                                <div>   
+                                                </div>
+                                            </div>
+
+
+                                        }
+                                        <script type="text/javascript">
+                                           
+                                    jQuery(document).ready(function () {
+                                        jQuery('.isotope-element-0').addClass("all category-2");
+                                        jQuery('.isotope-element-1').addClass("all category-1");
+                                        jQuery('.isotope-element-2').addClass("all category-2");
+                                        jQuery('.isotope-element-3').addClass("all category-2");
+                                        jQuery('.isotope-element-4').addClass("all category-2");
+                                    })
+                                        </script>
+                                     
+                                  
+                                    </div>
+                                   
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

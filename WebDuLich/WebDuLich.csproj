@@ -669,7 +669,9 @@
     <Content Include="Global.asax" />
     <Content Include="HtmlPage1.html" />
     <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\bautrang_dulichbautrang.jpg" />
     <Content Include="images\header-image.jpg" />
+    <Content Include="images\Logo.png" />
     <Content Include="img\002.jpg" />
     <Content Include="img\003.jpg" />
     <Content Include="img\004.jpg" />
@@ -721,6 +723,7 @@
     <Content Include="js\jquery.easypiechart.js" />
     <Content Include="js\jquery.flexslider-min.js" />
     <Content Include="js\jquery.hoverIntent.minified.js" />
+    <Content Include="js\jquery.isotope.min.js" />
     <Content Include="js\jquery.lazyloader.js" />
     <Content Include="js\jquery.loader.js" />
     <Content Include="js\jquery.mb.YTPlayer.js" />
@@ -751,6 +754,7 @@
     <Content Include="js\tm_animate_js_wow.js" />
     <Content Include="js\tm_block_bg_parallax.js" />
     <Content Include="js\tm_block_bg_video.js" />
+    <Content Include="js\views_isotope.js" />
     <Content Include="js\wow.js" />
     <Content Include="Models\WebDuLich.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -1131,6 +1135,7 @@
     <Content Include="Models\WebDuLich.edmx.diagram">
       <DependentUpon>WebDuLich.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\publish.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\flot-data.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -1181,6 +1186,9 @@
     <Content Include="Views\Default\TieuBieu.cshtml" />
     <Content Include="Views\Default\Header.cshtml" />
     <Content Include="Views\Default\Detail.cshtml" />
+    <Content Include="Views\Default\Abouts.cshtml" />
+    <Content Include="Views\Default\PhongCanh.cshtml" />
+    <Content Include="Views\Default\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

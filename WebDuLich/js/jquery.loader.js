@@ -12,7 +12,8 @@ jQuery(function() {
 });
 
 (function($) {
-	jQuery(window).load(function($) {
+    jQuery(window).load(function ($) {
+       
 		if (jQuery(".portfolio-grid").length) {
 			function getNumColumns() {
 				var $folioWrapper = jQuery('#isotope-container').data('cols');
