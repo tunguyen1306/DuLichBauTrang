@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = "~/Views/Shared/LayOutWeb.cshtml";
+}
+@using System.Linq;
+@using System.Web;
+@using System.Web.Mvc;
+@using WebDuLich.Models;
+@using System.Configuration
+@model IEnumerable<WebDuLich.Models.tbl_new_dulich>
+@{
+    WebDuLichEntities db = new WebDuLichEntities();
+    var qs = from dataslide in db.tbl_slide_dulich
+             where dataslide.trangthai_silde_dulich == 1
+             select dataslide;
+
+    var qsMenu = from datamenu in db.tbl_menu_dulich
+                 where datamenu.trangthai_menu_dulich == 1
+                 orderby datamenu.thutu_menu_dulich
+                 select datamenu;
+}
+
+<header id="header" class="header page-header clearfix" role="banner">
+
+    <div class="header-section-3">
+
+        @Html.Partial("~/Views/Default/Menu.cshtml", qsMenu)
+    </div>
+</header>
+
+<header role="banner" class="header page-header clearfix" id="header">
+    <!-- Region Header Top -->
+
+   
+    <!-- Region Header bottom -->
+    <div class="header_bottom_wrapper" id="header_bottom_wrapper">
+        <div class="container-12">
+            <div class="grid-12">
+                <div class="region region-header-bottom">
+
+                    <div class="block-views-about-block block block-views block-even" id="block-views-about-block">
+                        <!-- Block title -->
+                        <h2 class="title block-title">Một vài điều Về Khu Du lịch Bàu Trắng</h2>
+
+                        <!-- Block content -->
+                        <div class="content block-content">
+                            <div class="view view-about view-id-about view-display-id-block view-dom-id-218374814b2a23ed4cbe64473d92fa48">
+
+
+
+                                <div class="view-content">
+                                    <div class="views-row views-row-1 views-row-odd views-row-first views-row-last clearfix">
+
+                                        <div class="views-field views-field-field-about-image">       
+                                         <div class="field-content"><img width="370" height="243" src="~/images/bautrang_dulichbautrang.jpg"></div>  </div>
+                                        <h4 class="views-field views-field-title">        
+                                        <span class="field-content">Bàu Trắng nằm giữa những triền cát rộng mênh mông, tựa như bức tranh cát trắng, mịn màng. </span>  </h4>
+                                        <div class="views-field views-field-body">       
+                                         <div class="field-content">
+                                             <p style="white-space:pre-line">
+                                                 -Du khách sẽ không khỏi ngỡ ngàng khi leo lên những triền cát cao lại bắt gặp một biển hồ lấp lánh ánh bạc dưới mặt trời rực rỡ, những cánh sen hồng thấp thoáng, lấp ló sau những chiếc lá xanh tạo nên một khung cảnh thiên nhiên thơ mộng.
+                                                 - Cách Phan Thiết khoảng 65 km về hướng đông bắc, Bàu Trắng thuộc địa phận thôn Hồng Lâm, xã Hòa Thắng, huyện Bắc Bình. Du khách có thể đến với Bàu Trắng bằng hai cung đường khác nhau: Từ Hòn Rơm đi xe Jeep, du khách cho xe men theo đường đến Mũi Né, qua chợ Mũi Né, Đồi Hồng cứ thế chạy dọc bãi biển. Xe chạy khoảng một tiếng đồng hồ từ Mũi Né là vào tới Bàu Trắng, hoặc từ thành phố Phan Thiết theo quốc lộ 1A đến Lương Sơn, có ngã ba, rẽ phải chừng 18km băng qua những ngọn đồi trọc, lúc lên cao, lúc xuống thấp, xuyên qua các cánh rừng sò đo, rừng dừa xanh mướt trên những động cát trắng thơ mộng là đến nơi.
+                                                 -Bàu Trắng hình thành từ lâu đời, xưa kia nơi đây là một hồ lớn, sau này người dân đắp đập cát chạy vắt ngang hồ để đi qua. Hồ lớn này từ đó bị chia thành 2 phần: tiểu hồ và đại hồ.
+                                                 -Do “Bàu” trong tiếng địa phương nghĩa là “hồ” nên từ rất lâu, người địa phương đã gọi tiểu hồ là Bàu Ông và đại hồ là Bàu Bà. Bàu Bà rộng hơn Bàu Ông và chứa lượng nước nhiều hơn. Bàu Bà có diện tích 70ha, nơi rộng nhất là 500m, độ sâu trung bình là 5m, nơi sâu nhất của Bàu Bà là 19m vào mùa mưa, càng về phía bờ, nước càng cạn dần.
+                                                 -Nằm giữa những triền cát trắng nên Bàu Bà còn được gọi là Bàu Trắng và ngày nay cũng thường được gọi với cái tên Bàu Sen bởi trong hồ vào mùa sen nở, phủ kín cả một vùng hồ. Hệ sinh vật ở Bàu Sen rất phong phú, có nhiều loại cá nước ngọt: cá rô, cá lóc, cá trê, cá trắm cỏ…
+                                                 -Hồ được bao quanh bởi những triền cát trắng với cái nắng, cái gió được thiên nhiên ban tặng khiến cho hồ đẹp đến tuyệt vời. Từ trên đồi cát nhìn xuống hồ phẳng lặng tựa gương óng ánh sen hồng, xa xa những đồi cát sẫm màu nhấp nhô lên xuống khiến du khách không khỏi trầm trồ, thán phục.
+                                                 -Bàu Trắng còn hoang sơ và mộc mạc. Thế nhưng chính cái nét hoang sơ và mộc mạc ấy với những triền cát trắng, với tiếng sóng rì rào của biển như có ma lực thu hút những người mê cái đẹp về với nơi đây để tìm cảm hứng sáng tác nghệ thuật.
+                                                 -Đến với Bàu Trắng, du khách có thể thuê một chiếc thuyền của ngư dân ven vùng để khám phá, dạo chơi, câu cá sẽ rất thú vị. Nước ở Bàu Trắng ngọt mát quanh năm đã làm dịu đi không khí nóng bỏng của đồi cát mênh mông tạo nên một khung cảnh thiên nhiên trữ tình mà bất cứ ai đến với vùng này đều muốn ghé thăm.
+                                             </p>
+                                            </div>  
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

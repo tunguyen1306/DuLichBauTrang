@@ -54,15 +54,14 @@
     <script type="text/javascript" src="~/js/jquery.appear.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/shortcodes.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/jquery.lazyloader.js?o3qqzv"></script>
+    <script src="~/js/views_isotope.js"></script>
+    <script src="~/js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="~/js/jquery.colorbox-min.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/colorbox.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/wow.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/jquery.flexslider-min.js?o3qqzv"></script>
-  
     <script type="text/javascript" src="~/js/tm_block_bg_parallax.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/jquery.stellar.min.js?o3qqzv"></script>
-    @*<script type="text/javascript" src="~/js/jquery.mb.YTPlayer.js?o3qqzv"></script>
-    <script type="text/javascript" src="~/js/tm_block_bg_video.js?o3qqzv"></script>*@
     <script type="text/javascript" src="~/js/jquery.hoverIntent.minified.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/sftouchscreen.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/js1/superfish.js?o3qqzv"></script>
@@ -70,7 +69,7 @@
     <script type="text/javascript" src="~/js/supersubs.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/superfish.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/theme988.core.js?o3qqzv"></script>
-    <script type="text/javascript" src="~/js/jquery.loader.js?o3qqzv"></script>
+    <script type="text/javascript" src="~/js/jquery.loader.js"></script>
     <script type="text/javascript" src="~/js/jquery.mobilemenu.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/jquery.debouncedresize.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/jquery.easing.js?o3qqzv"></script>
@@ -83,6 +82,10 @@
     <script type="text/javascript" src="~/js/jquery.simplr.smoothscroll.min.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/migrate.js?o3qqzv"></script>
     <script type="text/javascript" src="~/js/tm-parallax.js?o3qqzv"></script>
+
+
+
+
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript">
 
@@ -100,75 +103,108 @@
     <div id="page-wrapper" class="page-wrapper">
         <div id="page" class="page">
         
-         
-            @RenderBody()
-            <footer id="footer" class="footer page-footer" role="contentinfo">
+            <div id="main-wrapper" class="main-wrapper" role="main">
 
-                <div class="footer-wrapper">
-                    <div class="container-12">
-                        <div class="grid-5">
+                @RenderBody()
+                <div class="container-12">
+                    <div class="grid-12">
+                        <div id="main" class="main clearfix">
 
-                            <div class="region region-footer-one">
-                                <div id="block-fb-likebox-0" class="block-fb-likebox-0 block block-fb-likebox block-even">
+                            <div id="content" class="content content-main ">
 
-                                    <h2 class="title block-title">Follow Us On Facebook</h2>
+                                <div class="region region-content">
+                                    <div id="block-system-main" class="block-system-main block block-system block-even">
 
-                                    <div class="content block-content">
-                                        <iframe src="//www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/dulichbautrang&width=270&colorscheme=light&show_faces=true&bordercolor&stream=false&header=false&height=305&show_border=false&force_wall=false" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 270px; height: 305px;" allowtransparency="true" title="Like us on Facebook"></iframe>
+
+                                        <div class="content block-content">
+                                            <h2 class="title block-title">Thông tin về Bàu Trắng</h2>
+                                        </div>
+                                    </div>
+                                    <div id="block-views-information-block" class="block-views-information-block block block-views grid-5 suffix-1 alpha block-odd">
+
+
+
+
+                                        <script>
+                                var map;
+function initialize() {
+  var mapProp = {
+      center: new google.maps.LatLng(11.08219, 108.40098999999998),
+    zoom:12,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  var markers = new google.maps.Marker({
+      map: map,
+      draggable: true,
+      animation: google.maps.Animation.DROP,
+      position: { lat: 11.08219, lng: 108.40098999999998 }
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+                                        </script>
+                                        <div id="googleMap" style="width:500px;height:380px;"></div>
+                                    </div>
+                                    <div id="block-block-12" class="block-block-12 block block-block grid-6 omega indent-one block-even">
+
+
+                                        <div class="content block-content">
+                                            <div id="progressbar" class="progressbar color-1" data-percent="25">
+                                                <div class="progressbar-title">Giám Đốc: <span style="font-size:20px;color:blue;font-weight:bold;">NGUYỄN VĂN HIỀN</span></div>
+
+                                            </div>
+                                            <div id="progressbar--2" class="progressbar color-2" data-percent="68">
+                                                <div class="progressbar-title">Số đt:<span style="font-size:20px;color:blue;font-weight:bold;">  091.367.2396--091.891.0141</span></div>
+
+                                            </div>
+                                            <div class="fb-page" data-href="https://www.facebook.com/dulichbautrang/" data-width="700" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/dulichbautrang/"><a href="https://www.facebook.com/dulichbautrang/">Du lịch sinh thái Bàu Trắng</a></blockquote></div></div>
+                                            @*<div id="progressbar--3" class="progressbar color-3" data-percent="30">
+                                        <div class="progressbar-title">miasasas verro</div>
+
+                                    </div>
+                                    <div id="progressbar--4" class="progressbar color-4" data-percent="77">
+                                        <div class="progressbar-title">certyuasa</div>
+
+                                    </div>*@
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="grid-4">
+                    </div>
+                </div>
+            </div>
+          
+            <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=1706744036228892";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+            @*<footer id="footer" class="footer page-footer" role="contentinfo">
+
+                <div class="footer-wrapper">
+                    <div class="container-12">
+                        
+                        <div class="grid-9">
 
                             <div class="region region-footer-two">
                                 <div id="block-tm-follow-site" class="block-tm-follow-site block block-tm-follow block-odd">
 
+                                    <div id="fb-root"></div>
 
                                     <div class="content block-content">
-                                        <div class='tm-follow-links clearfix site'>
-                                            <span class='tm-follow-link-wrapper tm-follow-link-wrapper-this-site without-label'>
-                                                <a href="/drupal_53893/?q=rss.xml" class="tm-follow-link tm-follow-link-this-site tm-follow-link-site"></a>
-                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-facebook without-label'>
-                                                <a href="http://facebook.com/" class="tm-follow-link tm-follow-link-facebook tm-follow-link-site"></a>
-                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-googleplus without-label'>
-                                                <a href="http://plus.google.com/" class="tm-follow-link tm-follow-link-googleplus tm-follow-link-site"></a>
-                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-linkedin without-label'>
-                                                <a href="http://linkedin.com/" class="tm-follow-link tm-follow-link-linkedin tm-follow-link-site"></a>
-                                            </span><span class='tm-follow-link-wrapper tm-follow-link-wrapper-pinterest without-label'>
-                                                <a href="http://pinterest.com/" class="tm-follow-link tm-follow-link-pinterest tm-follow-link-site"></a>
-                                            </span>
+                                        <h2 class="title block-title">Like Fanpage</h2>
+
+                                        <div class="content block-content">
+                                            <div class="fb-page" data-href="https://www.facebook.com/dulichbautrang/" data-width="700" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/dulichbautrang/"><a href="https://www.facebook.com/dulichbautrang/">Du lịch sinh thái Bàu Trắng</a></blockquote></div></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="block-block-9" class="block-block-9 block block-block block-even">
-
-
-                                    <div class="content block-content">
-                                        <p>28 Jackson Blvd Ste 1020<br />Chicago<br />IL 60604-2340</p>
-                                        <p>
-                                            <a href="/cdn-cgi/l/email-protection#ec85828a83ac8889818380858287c2839e8b">
-                                                <i class="fa fa-envelope"></i> <span class="__cf_email__" data-cfemail="f49d9a929bb49091999b989d9a9fda9b8693">[email&#160;protected]</span>
-                                                <!--<script data-cfhash='f9e31' type="text/javascript"> /* <![CDATA[ */
-                                            !function(t, e, r, n, c, a, p) {
-                                                try {
-                                                    t = document.currentScript || function() { for (t = document.getElementsByTagName('script'), e = t.length; e--;)if (t[e].getAttribute('data-cfhash'))return t[e]; }();
-                                                    if (t && (c = t.previousSibling)) {
-                                                        p = t.parentNode;
-                                                        if (a = c.getAttribute('data-cfemail')) {
-                                                            for (e = '', r = '0x' + a.substr(0, 2) | 0, n = 2; a.length - n; n += 2)e += '%' + ('0' + ('0x' + a.substr(n, 2) ^ r).toString(16)).slice(-2);
-                                                            p.replaceChild(document.createTextNode(decodeURIComponent(e)), c);
-                                                        }
-                                                        p.removeChild(t);
-                                                    }
-                                                } catch (u) {
-                                                }
-                                            }() /* ]]> */
-                                        </script>-->
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="grid-3">
@@ -178,7 +214,7 @@
 
 
                                     <div class="content block-content">
-                                        <div>&copy; 2016 | <a href="?q=privacy-policy">Privacy Policy</a></div>
+                                        <div><a >Tunguyen.it.dev@gmail.com</a></div>
                                         <div class="switcher">Desktop Version Only</div>
                                     </div>
                                 </div>
@@ -189,7 +225,7 @@
                 </div>
 
 
-            </footer>
+            </footer>*@
         </div>
     </div>
     <script type="text/javascript" src="~/js/flexslider.load.js?o3qqzv"></script>
